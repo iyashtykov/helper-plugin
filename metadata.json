@@ -2,7 +2,7 @@
   "name": "helper plugin",
   "type": "helper",
   "properties": {
-    "user_type": "instructor",
+    "user_type": "learner",
     "component": "dashboard"
   }
 }
