@@ -1,2 +1,2 @@
-console.log("instructor dashboard")
+console.log("learner dashboard")
 
