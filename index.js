@@ -1,2 +1,2 @@
-console.log("user_type has another value")
+console.log("no init params")
 
