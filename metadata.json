@@ -2,7 +2,7 @@
   "name": "helper plugin",
   "type": "helper",
   "properties": {
-    "user_type": "all",
+    "user_type": "brokenvalue",
     "component": "assignment"
   }
 }
