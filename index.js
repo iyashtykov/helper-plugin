@@ -2,6 +2,7 @@ console.log("all")
 
 const MENU_ID = 'custom_menu_id'
 const OPEN_MODAL_ID = 'open_modal_id'
+const HIDE_MODAL_ID = 'hide_modal_id'
 
 const addMenuItem = (parentDescriptor, item) => {
   window.codioIDE.menu.addItem(parentDescriptor, item)
@@ -27,6 +28,9 @@ const style = `
     padding: 20px;
 `
 const visibility = `
+    visibility: visible;
+`
+const invisibility = `
     visibility: hidden;
 `
 
@@ -62,7 +66,11 @@ const initFunc = () => {
   const showModalCallback = () => {
     modal.style = visibility
   }
+  const hideModalCallback = () => {
+    modal.style = invisibility
+  }
   addMenuItem({title: 'Codio'}, {id: OPEN_MODAL_ID, title: 'Show modal', callback: showModalCallback})
+  addMenuItem({title: 'Codio'}, {id: HIDE_MODAL_ID, title: 'Hide modal', callback: hideModalCallback})
 }
 
 setTimeout(initFunc, 3000)
