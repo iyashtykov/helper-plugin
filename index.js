@@ -17,15 +17,15 @@ const removeMenuItem = (itemDescriptor) => {
 }
 
 const style = `
-    width: 500px;
-    height: 80px;
+    width: 480px;
+    height: 70px;
     z-index: 10000;
     position: absolute;
     left: 600px;
     top: 200px;
     background-color: white;
     border: 2px solid red;
-    padding: 20px;
+    padding: 10px;
 `
 const visible = `
     visibility: visible;
