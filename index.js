@@ -25,10 +25,9 @@ const style = `
     background-color: white;
     border: 2px solid red;
     padding: 20px;
-    visibility: hidden;
 `
 const visibility = `
-    visibility: visible;
+    visibility: hidden;
 `
 
 const initFunc = () => {
