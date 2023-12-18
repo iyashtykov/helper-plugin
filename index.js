@@ -1,2 +1,2 @@
-console.log("broken user_type")
+console.log("user_type is broken")
 
