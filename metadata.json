@@ -2,7 +2,7 @@
   "name": "helper plugin",
   "type": "helper",
   "properties": {
-    "user_type1": "all",
-    "component1": "all"
+    "user_type": "all",
+    "component": "all"
   }
 }
