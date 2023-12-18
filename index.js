@@ -1,6 +1,7 @@
 console.log("all")
 
 const MENU_ID = 'custom_menu_id'
+const OPEN_MODAL_ID = 'open_modal_id'
 
 const addMenuItem = (parentDescriptor, item) => {
   window.codioIDE.menu.addItem(parentDescriptor, item)
@@ -24,6 +25,10 @@ const style = `
     background-color: white;
     border: 2px solid red;
     padding: 20px;
+    visibility: hidden;
+`
+const visibility = `
+    visibility: visible;
 `
 
 const initFunc = () => {
@@ -55,6 +60,11 @@ const initFunc = () => {
   buttonDelete.onclick = () => removeMenuItem({id: MENU_ID})
   modal.append(buttonDelete)
   document.querySelector('body').append(modal)
+  const showModalCallback = () => {
+    modal.style = visibility
+  }
+  addMenuItem({title: 'Codio'}, {id: OPEN_MODAL_ID, title: 'Show modal', callback: showModalCallback})
 }
 
 setTimeout(initFunc, 3000)
+
