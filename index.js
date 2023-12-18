@@ -18,29 +18,29 @@ const removeMenuItem = (itemDescriptor) => {
 
 const style = `
     width: 500px;
-    height: 100px;
+    height: 80px;
     z-index: 10000;
     position: absolute;
     left: 600px;
-    top: 100px;
+    top: 200px;
     background-color: white;
     border: 2px solid red;
     padding: 20px;
 `
-const visibility = `
+const visible = `
     visibility: visible;
 `
-const invisibility = `
+const hidden = `
     visibility: hidden;
 `
 
 const initFunc = () => {
-  console.log('init!!!')
+  console.log('init')
   const modal = document.createElement('div')
   modal.id = 'customModalId'
   modal.style = style
   const title = document.createElement('h2')
-  title.innerHTML = 'Modal title'
+  title.innerHTML = 'Manage custom menu items'
   modal.append(title)
   const buttonAdd = document.createElement('button')
   buttonAdd.type = 'button'
@@ -64,14 +64,14 @@ const initFunc = () => {
   modal.append(buttonDelete)
   document.querySelector('body').append(modal)
   const showModalCallback = () => {
-    modal.style = visibility
+    modal.style = visible
     modal.style = style
   }
   const hideModalCallback = () => {
-    modal.style = invisibility
+    modal.style = hidden
   }
-  addMenuItem({title: 'Codio'}, {id: OPEN_MODAL_ID, title: 'Show modal', callback: showModalCallback})
-  addMenuItem({title: 'Codio'}, {id: HIDE_MODAL_ID, title: 'Hide modal', callback: hideModalCallback})
+  addMenuItem({title: 'Codio'}, {id: OPEN_MODAL_ID, title: 'Show Manage custom menu items', callback: showModalCallback})
+  addMenuItem({title: 'Codio'}, {id: HIDE_MODAL_ID, title: 'Hide Manage custom menu items', callback: hideModalCallback})
 }
 
 setTimeout(initFunc, 3000)
