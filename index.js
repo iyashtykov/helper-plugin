@@ -57,6 +57,4 @@ const initFunc = () => {
   document.querySelector('body').append(modal)
 }
 
-window.addEventListener('load', () => {
-  setTimeout(initFunc, 3000)
-})
+setTimeout(initFunc, 3000)
