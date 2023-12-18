@@ -65,6 +65,7 @@ const initFunc = () => {
   document.querySelector('body').append(modal)
   const showModalCallback = () => {
     modal.style = visibility
+    modal.style = style
   }
   const hideModalCallback = () => {
     modal.style = invisibility
