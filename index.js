@@ -16,7 +16,7 @@ const removeMenuItem = (itemDescriptor) => {
 
 const style = `
     width: 500px;
-    height: 150px;
+    height: 100px;
     z-index: 10000;
     position: absolute;
     left: 600px;
