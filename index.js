@@ -1,4 +1,3 @@
-console.log("all")
 
 const MENU_ID = 'custom_menu_id'
 const OPEN_MODAL_ID = 'open_modal_id'
