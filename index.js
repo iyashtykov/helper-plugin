@@ -21,7 +21,7 @@ const style = `
     z-index: 10000;
     position: absolute;
     left: 600px;
-    top: 200px;
+    top: 250px;
     background-color: white;
     border: 2px solid red;
     padding: 10px;
