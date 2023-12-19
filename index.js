@@ -34,7 +34,7 @@ const hidden = `
 `
 
 const initFunc = () => {
-  console.log('init modal')
+  console.log('init modal dialog')
   const modal = document.createElement('div')
   modal.id = 'customModalId'
   modal.style = style
