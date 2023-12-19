@@ -70,7 +70,7 @@ const initFunc = () => {
     modal.style = hidden
   }
   addMenuItem({title: 'Codio'}, {id: OPEN_MODAL_ID, title: 'Show Manage custom menu items', callback: showModalCallback})
-  addMenuItem({title: 'Codio1'}, {id: HIDE_MODAL_ID, title: 'Hide Manage custom menu items', callback: hideModalCallback})
+  addMenuItem({title: 'Codio'}, {id: HIDE_MODAL_ID, title: 'Hide Manage custom menu items', callback: hideModalCallback})
 }
 
 setTimeout(initFunc, 3000)
