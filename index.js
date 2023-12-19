@@ -34,7 +34,7 @@ const hidden = `
 `
 
 const initFunc = () => {
-  console.log('init')
+  console.log('init1')
   const modal = document.createElement('div')
   modal.id = 'customModalId'
   modal.style = style
