@@ -1,11 +1,2 @@
 # helper-plugin
-new
-## line
-line
-line
-## line
-line
-line
-## line
-
-## end
+example plugin for use in codio
